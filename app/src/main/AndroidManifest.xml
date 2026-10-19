@@ -9,7 +9,7 @@
     <application
         android:allowBackup="false"
         android:label="AimAssist"
-        android:theme="@style/Theme.Material3.DayNight.NoActionBar">
+        android:theme="@style/Theme.AimAssist">
 
         <activity
             android:name=".MainActivity"
