@@ -6,7 +6,6 @@ plugins {
 android {
     namespace = "com.vanta.aim"
     compileSdk = 35
-    ndkVersion = "29.0.13113456"
 
     defaultConfig {
         applicationId = "com.vanta.aim"
@@ -14,12 +13,6 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
-        ndk { abiFilters += "arm64-v8a" }
-        externalNativeBuild { cmake { cppFlags += "-std=c++20" } }
-    }
-
-    externalNativeBuild {
-        cmake { path = file("src/main/cpp/CMakeLists.txt") }
     }
 
     buildFeatures { viewBinding = true }
